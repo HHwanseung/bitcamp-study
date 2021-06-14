@@ -7,9 +7,10 @@ public class Exam0170 {
     int age;
      
     age = 20; 
+    System.out.println(age);
     
     //할당 연산자를 이용하면 언제든 해당 메모리에 다른 값을 저장할 수 있다.
-    age = 30;
+    //age = 30;
   }
 }
 

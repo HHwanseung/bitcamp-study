@@ -7,5 +7,7 @@ public class Exam0150 {
   public static void main(String[] args) {
     //여러 개의 변수를 선언할 때도 한 개를 선언할 때와 마찬가지로 값을 저장할 수 있다.
     int a1 = 100, a2 = 200;
+    System.out.println(a1); 
+    System.out.println(a2);
   }
 }

@@ -18,5 +18,6 @@ public class Exam0210 {
     int score;
     
     score = 100;
+    System.out.println(score);
   }
 }
