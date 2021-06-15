@@ -1,7 +1,7 @@
 package com.eomcs.lang.ex05;
 
 //# 논리 연산자 : && vs &
-//
+// 꼭 다시보기
 public class Exam0330 {
   public static void main(String[] args) {
     boolean a = false;

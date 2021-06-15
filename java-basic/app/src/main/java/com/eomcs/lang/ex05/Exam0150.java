@@ -13,6 +13,7 @@ public class Exam0150 {
     boolean bool = true;
     char c = 7;
 
+    //이거 중요하니 꼭 다시보기
     // byte + byte = int
     // => 연산을 하기 전에 byte 값이 int로 암시적 형변환 된다.
     //byte r1 = b + b; // 컴파일 오류!
@@ -33,7 +34,7 @@ public class Exam0150 {
     // => short가 int로 암시적 형변환 한 이후 연산을 수행한다.
     int r5 = s + i; // OK
 
-    // int + long = long
+    // int + long = long (이거중요)
     // => int가 long으로 암시적 형변환 한 이후에 연산을 수행한다.
     //int r6 = i + l; // 컴파일 오류!
 
