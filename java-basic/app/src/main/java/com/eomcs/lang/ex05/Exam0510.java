@@ -10,10 +10,10 @@ public class Exam0510 {
     //    조건이 거짓이면 표현식2를 실행한다.
     int age = 20;
     
-    /* 
+  /*
     (age > 18) ? System.out.println("성인이다.") : 
                      System.out.println("미성년자이다.");  //컴파일 오류!
-    */
+  */
     // 표현식 자리에는 문자가 되었든 숫자가 되었든 
     // 실행 결과가 놓여져야 한다.
     // 위의 System.out.println(...) 문장은 결과를 리턴하지 않는다.

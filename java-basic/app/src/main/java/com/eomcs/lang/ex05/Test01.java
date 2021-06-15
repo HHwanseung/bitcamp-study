@@ -2,7 +2,7 @@ package com.eomcs.lang.ex05;
 
 //# 비트 연산자 : 응용 II
 //
-public class Exam0450 {
+public class Test01 {
   public static void main(String[] args) {
     // Yes/No 또는 true/false 값을 저장할 때
     // 비트 연산자를 사용하면 메모리를 절약할 수 있다.
@@ -53,41 +53,25 @@ public class Exam0450 {
     // ||- c++
     // |- c
 
-    // 이렇게 준비된 32비트 메모리에서 특정 비트의 값을 1로 설정하고 싶다면
-    // 다음과 같이 특정 비트의 값이 1인 수를 OR(|) 연산하라!
-    lang2 = lang2 | 0x80; // c = true
-    //   00000000
-    // | 10000000
-    // ----------
-    //   10000000
+    final int LANG_C      = 0b10000000;
+    final int LANG_CPP    = 0b01000000;
+    final int LANG_JAVA   = 0b00100000;
+    final int LANG_JS     = 0b10010000;
+    final int LANG_PYTHON = 0b10001000;
+    final int LANG_PHP    = 0b10000100;
+    final int LANG_HTML   = 0b10000010;
+    final int LANG_CSS    = 0b10000001;
 
-    //lang2 |= 0x00; // c++ = false
-
-    lang2 |= 0x20; // java = true
-    //   10000000
-    // | 00100000
-    // ----------
-    //   10100000
-
-    //lang2 |= 0x00; // js = false
-
-    lang2 |= 0x08; // python = true
-    //   10100000
-    // | 00001000
-    // -----------
-    //   10101000
-
-    //lang2 |= 0x00; // php = false
-
-    lang2 |= 0x02; // html = true
-    //   10101000
-    // | 00000010
-    // ----------
-    //   10101010
-
+    lang2 |= LANG_C;
+    lang2 |= LANG_JAVA;
+    lang2 |= LANG_PYTHON;
+    lang2 |= LANG_HTML;
     System.out.println(Integer.toBinaryString(lang2));
 
-    // 실무에서는 이렇게 비트를 이용하여 여러 개의 true/false 상태를 저장하기도 한다.
+    lang2 = LANG_C | LANG_JAVA | LANG_PYTHON | LANG_HTML;
+    System.out.println(Integer.toBinaryString(lang2));
 
+    lang2 = lang2 - LANG_JAVA;
+    System.out.println(Integer.toBinaryString(lang2));
   }
 }
