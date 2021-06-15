@@ -21,22 +21,25 @@ public class Exam0150 {
     // short + short = int
     // => 연산을 하기 전에 short 값이 int로 암시적 형변환 된다.
     //short r2 = s + s; // 컴파일 오류!
+      //System.out.println(r2);
+
 
     // byte + short = int
     // => byte와 short 값은 int로 암시적 형변환 된다.
     //short r3 = b + s; // 컴파일 오류!
+      //System.out.println(r3);
 
     // byte + int = int
     // => byte가 int로 암시적 형변환 한 이후 연산을 수행한다.
-    int r4 = b + i; // OK
+    //int r4 = b + i; // OK
 
     // short + int = int
     // => short가 int로 암시적 형변환 한 이후 연산을 수행한다.
-    int r5 = s + i; // OK
+    //int r5 = s + i; // OK
 
     // int + long = long (이거중요)
     // => int가 long으로 암시적 형변환 한 이후에 연산을 수행한다.
-    //int r6 = i + l; // 컴파일 오류!
+    //int r6 = i + l; // 컴파일 오류! 
 
     // long + float = float
     // => long이 float으로 암시적 형변환 한 후에 연산을 수행한다.
@@ -72,7 +75,7 @@ public class Exam0150 {
 //   "암시적 형변환(implicit type conversion)"이라 부른다.
 // - 암시적 형변환 규칙
 //   다음과 같이 오른쪽 타입의 값으로 자동 변환시킨다.
-//   byte,short,char => int => long => float => double
+//   byte(1),short(2),char(2) => int(4) => long(8) => float(4) => double(8)
 //
 // - 정수와 부동소수점에 대해서만 암시적 형변환이 일어난다.
 //   그 외 다른 타입은 불가능하다!

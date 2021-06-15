@@ -7,7 +7,7 @@ public class Exam0143 {
     
     float f1 = 987.6543f;
     float f2 = 1.111111f;
-    System.out.println(f1);
+    System.out.println(f1); 
     System.out.println(f2);
     
     float r1 = f1 + f2;
