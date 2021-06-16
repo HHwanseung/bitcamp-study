@@ -4,7 +4,7 @@ package com.eomcs.lang.ex06;
 //
 public class Exam0110 {
   public static void main(String[] args) {
-    int age = 17;
+    int age = 20; 
 
     // => if (조건) 문장;
     if (age >= 19) System.out.println("성인이다.");
