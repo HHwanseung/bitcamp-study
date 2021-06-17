@@ -46,6 +46,7 @@ public class Exam0230 {
       case "ohora":
       case "hul":
       default:
+    	  
     }
 
   }

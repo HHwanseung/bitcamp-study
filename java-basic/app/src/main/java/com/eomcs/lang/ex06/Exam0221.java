@@ -31,6 +31,6 @@ public class Exam0221 {
       default:
         System.out.println("올바른 번호를 입력하세요!");
     }
-    keyScan.close();
+    keyScan.close(); System.out.println(); 
   }
 }
