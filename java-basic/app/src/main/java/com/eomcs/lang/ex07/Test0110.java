@@ -4,8 +4,24 @@ import java.util.Scanner;
 
 //# 메서드 : 사용 전
 //
-public class Exam0110 {
-  public static void main(String[] args) {
+public class Test0110 {
+  
+	public static void printSpaces(int len) {
+		for (int i = 0; i < len; i++) {
+			System.out.println( " ");
+		}
+	}
+	
+	public static void printStar(int len) {
+		for (int i = 0; i < len; i++) {
+			System.out.println("*");
+		}
+ 	}
+	 
+	public static void getSpaceLength(int totarStar, int displayStar) {
+	
+	}
+	public static void main(String[] args) {
     Scanner keyScan = new Scanner(System.in);
     System.out.print("밑변의 길이? ");
     int len = keyScan.nextInt();

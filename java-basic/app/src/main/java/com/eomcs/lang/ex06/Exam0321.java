@@ -10,17 +10,17 @@ public class Exam0321 {
 
     // 1부터 100까지의 짝수의 합은?
     // => continue 사용 전
-    count = 0;
-    sum = 0;
-    while (count < 100) {
-      count++;
-      if ((count & 0x01) == 0) { // count & 0x01 ==> count % 2
-        sum += count;
-      }
-    }
-    System.out.printf("count=%d, sum=%d\n", count, sum);
-
-    System.out.println("------------------------");
+//    count = 0;
+//    sum = 0;
+//    while (count < 100) {
+//      count++;
+//      if ((count & 0x01) == 0) { // count & 0x01 ==> count % 2
+//        sum += count;
+//      }
+//    }
+//    System.out.printf("count=%d, sum=%d\n", count, sum);
+//
+//    System.out.println("------------------------");
 
     // => continue 사용 후
     count = 0;
