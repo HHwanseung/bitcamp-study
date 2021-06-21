@@ -4,6 +4,7 @@ package com.eomcs.lang.ex07;
 //
 public class Exam0430 {
 
+	// Heap 메모리에 어떤 변수를 만들어야 하는지 적어 놓은 설계도
   static class MyObject {
     int a;
     int b;

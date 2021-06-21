@@ -5,6 +5,7 @@ package com.eomcs.lang.ex07;
 public class Exam0460 {
 
   static int sum(int value) {
+	  System.out.println(value);
     if (value == 1)
       return 1;
 
