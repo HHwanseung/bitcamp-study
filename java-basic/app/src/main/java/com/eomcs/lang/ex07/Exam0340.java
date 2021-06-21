@@ -2,7 +2,7 @@ package com.eomcs.lang.ex07;
 
 //# 메서드 : 레포런스를 리턴하
 //
-public class Exam340 {
+public class Exam0340 {
 
   //swap()에서 만든 int a와 int b의 값을main()에서 사용하
   // primitive data type 값을객체에 담아 넘겨라!
