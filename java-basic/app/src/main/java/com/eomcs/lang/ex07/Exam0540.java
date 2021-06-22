@@ -23,7 +23,7 @@ public class Exam0540 {
 
     System.out.printf("이름: %s\n", args[0]);
     System.out.printf("총점: %d\n", sum);
-    System.out.printf("평균: %.1f\n", sum / 3f); //%.1f 소주점이 많을경우 .아래로 1까지
+    System.out.printf("평균: %.1f\n", (float)sum / (float)3); //%.1f 소주점이 많을경우 .아래로 1까지
   }
 }
 
