@@ -2,26 +2,52 @@ package com.eomcs;
 
 import java.util.Date;
 import java.util.Scanner;
-import com.eomcs.App.Board;
 
-public class BoardHandler {
+public class BoardHandler implements Handler {
 
+  // 한 개의 게시글을 담을 복합 데이터의 변수를 설계
+  static class Board {
+    String title;
+    String content;
+    String password;
+    int viewCount;
+    Date createdDate;
+  }
 
   static Scanner keyScan;
 
+  public void execute() {
+    loop: while (true) {
+      System.out.print("게시글 관리> ");
+      String command = keyScan.nextLine();
+
+      switch (command) {
+        case "list": list(); break;
+        case "add": add(); break;
+        case "update": update(); break;
+        case "delete": delete(); break;
+        case "view": view(); break;
+        case "back":
+          break loop;
+        default:
+          System.out.println("지원하지 않는 명령입니다.");
+      }
+      System.out.println();
+    }
+  }
+
   static void list() {
     System.out.println("[게시글 목록]");
-    
-    Object[] boards = ArrayList.toArray();
+
+    Object[] arr = ArrayList.toArray();
     int i = 0;
-    for (Object item : boards) {
+    for (Object item : arr) {
       Board board = (Board) item;
       System.out.printf("%d, %s, %s, %d\n", 
-          i, 
+          i++, 
           board.title, 
           String.format("%1$tY-%1$tm-%1$td", board.createdDate),
           board.viewCount);
-      i++;
     }
   }
 
@@ -47,7 +73,6 @@ public class BoardHandler {
 
     board.createdDate = new Date(); // 현재의 날짜와 시간을 생성하여 배열에 저장한다.
 
-    // 배열에 게시글 정보가 담긴 객체(식판)을 넣는다.
     ArrayList.append(board);
 
     System.out.println("게시글을 등록했습니다.");
@@ -102,7 +127,7 @@ public class BoardHandler {
     } 
 
     ArrayList.remove(index);
-    
+
     System.out.println("게시글을 삭제하였습니다.");
   }
 
