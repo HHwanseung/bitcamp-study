@@ -24,7 +24,7 @@ public class Test03 {
     v9 = 109;
     v10 = 110;
 
-    new int[60];
+   // new int[60];
 
     }
 }

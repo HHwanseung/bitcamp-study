@@ -7,4 +7,5 @@ class Test02 {
         System.out.println(100);
         System.out.println(100);
 
+    }
 }
